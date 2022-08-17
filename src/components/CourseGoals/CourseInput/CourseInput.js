@@ -50,6 +50,7 @@ const CourseInput = (props) => {
     props.onAddGoal(enteredValue);
   };
 //Setting CSS Classes Dynamically:Using backticks {` ${}`} Template literal
+//Dynamically define CSS with props...${props =>(props.invalid ? 'red' : 'black')};
   return (
     <form onSubmit={formSubmitHandler}>
       <FormControl invalid={!isValid}>
